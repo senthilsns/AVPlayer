@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2u-bp-qWP">
+                                <rect key="frame" x="733" y="934" width="210" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="210" id="le3-R5-qjW"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="bI4-hX-hs9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbl-Fy-vRS">
+                                <rect key="frame" x="1003" y="934" width="185" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="pauseAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="XH7-p8-eLM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pbl-Fy-vRS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2u-bp-qWP" secondAttribute="trailing" constant="60" symbolic="YES" id="Djn-P8-2dM"/>
+                            <constraint firstItem="H2u-bp-qWP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="733" id="KVr-QO-Mum"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="H2u-bp-qWP" secondAttribute="bottom" id="WP1-EC-eSq"/>
+                            <constraint firstItem="H2u-bp-qWP" firstAttribute="baseline" secondItem="Pbl-Fy-vRS" secondAttribute="baseline" id="pSQ-v4-a78"/>
+                            <constraint firstAttribute="trailing" secondItem="Pbl-Fy-vRS" secondAttribute="trailing" constant="732" id="ujS-60-nY2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseBtn" destination="Pbl-Fy-vRS" id="ydM-a5-mpM"/>
+                        <outlet property="startBtn" destination="H2u-bp-qWP" id="EbA-VY-Asg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
