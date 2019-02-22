@@ -4,6 +4,5 @@ tvOS - Objective C
 
 Operation 
 
-1. Start
-
+1. Play
 2. Pause
